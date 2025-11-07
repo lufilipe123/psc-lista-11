@@ -1,0 +1,22 @@
+public class SistemaVeiculos {
+    public static void main(String[] args) {
+        System.out.println("=== SISTEMA DE VEÍCULOS ===\n");
+        
+        Veiculo carro = new Carro("Toyota", "Corolla", 2023, 8.5);
+        Veiculo moto = new Moto("Honda", "CBR 600", 2024);
+        Veiculo caminhao = new Caminhao("Volvo", "FH 540", 2020);
+        
+        System.out.println("--- Teste Carro ---");
+        carro.exibirDetalhes();
+        carro.acelerar();
+        
+        System.out.println("\n--- Teste Moto ---");
+        moto.exibirDetalhes();
+        moto.acelerar();
+        
+        System.out.println("\n--- Teste Caminhao ---");
+        caminhao.exibirDetalhes();
+        caminhao.acelerar();
+        
+    }
+}
