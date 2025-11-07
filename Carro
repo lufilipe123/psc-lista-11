@@ -1,0 +1,13 @@
+public class Carro extends Veiculo {
+    private double tempoZeroACem;
+    
+    public Carro(String marca, String modelo, int ano, double tempoZeroACem) {
+        super(marca, modelo, ano);
+        this.tempoZeroACem = tempoZeroACem;
+    }
+    
+    @Override
+    public void acelerar() {
+        System.out.println(modelo + " " + marca + " está acelerando de 0 a 100 km/h em " + tempoZeroACem + " segundos.");
+    }
+}
